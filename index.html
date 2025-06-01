@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #f5f5f5;
     }
     .navbar {
       background-color: #4CAF50 !important;
@@ -20,57 +20,75 @@
     .nav-link:hover {
       text-decoration: underline;
     }
+    .hero {
+      background: linear-gradient(120deg, #e0f7e9, #c8e6c9);
+      text-align: center;
+      padding: 4rem 2rem;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .hero h1 {
+      color: #2e7d32;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
     .container {
       background-color: white;
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    h1, h3 {
+    h3 {
       color: #4CAF50;
     }
     footer {
+      background-color: #333;
+      color: white;
       text-align: center;
-      margin-top: 2rem;
       padding: 1rem;
       font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #c8e6c9;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">🌿 SeedCode</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="anova.html">ANOVA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="correlation.html">Correlation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pca.html">PCA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">SNP (Coming Soon)</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🌿 SeedCode</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="anova.html">ANOVA</a></li>
+          <li class="nav-item"><a class="nav-link" href="correlation.html">Correlation</a></li>
+          <li class="nav-item"><a class="nav-link" href="pca.html">PCA</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#">SNP (Coming Soon)</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <div class="container mt-4">
+  <section class="hero">
     <h1>Welcome to SeedCode 🌱</h1>
-    <p class="lead">
-      Your go-to resource for learning bioinformatics scripts tailored for seed trait analysis.
-    </p>
+    <p>Your guide to bioinformatics scripts for seed trait analysis</p>
+  </section>
 
+  <div class="container">
     <h3>What is SeedCode?</h3>
     <p>
       SeedCode helps students and researchers understand how to analyze seed traits using Python scripts.  
@@ -86,17 +104,15 @@
     </ul>
   </div>
 
-  <footer class="bg-dark text-light py-3 mt-5">
-  <div class="container text-center">
-    <p class="mb-1">&copy; 2025 SeedCode 🌿 | Learn, Code, Grow</p>
-    <p class="small">
-      <a href="index.html" class="text-light text-decoration-none">Home</a> |
-      <a href="anova.html" class="text-light text-decoration-none">ANOVA</a> |
-      <a href="correlation.html" class="text-light text-decoration-none">Correlation</a> |
-      <a href="pca.html" class="text-light text-decoration-none">PCA</a>
+  <footer>
+    <p>&copy; 2025 SeedCode 🌿 | Learn, Code, Grow</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="anova.html">ANOVA</a> |
+      <a href="correlation.html">Correlation</a> |
+      <a href="pca.html">PCA</a>
     </p>
-  </div>
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
